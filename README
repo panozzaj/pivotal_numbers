@@ -1,0 +1,7 @@
+Pivotal Numbers replaces the fibonacci stacks in PivotalTracker.com with clearer numbers.
+These high contrast numbers are better for viewing/setting story estimation when viewing projects on a projector.
+
+Install and extra info
+http://userscripts.org/scripts/show/65842
+
+Currently only works in Firefox due to the technique used.
