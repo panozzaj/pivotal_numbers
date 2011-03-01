@@ -17,11 +17,11 @@ function loadNumbers()
     {   
         for (var n = 0; n < 9; n++)
         {
-            if (pvtl_images[i].getAttribute("alt").slice(0, 17) == "Estimate: " + n + " point")
+            if (pvtl_images[i].getAttribute("title").slice(0, 17) == "Estimate: " + n + " point")
             {
                 pvtl_images[i].setAttribute("src", "")
                 pvtl_images[i].setAttribute("alt", n)
-                pvtl_images[i].setAttribute("style", "padding-left:4px;padding-right:4px;padding-top:1px;padding-bottom:0px;font-weight:bold;color:white;background-color:black;font-size:1.2em;font-style:normal;-moz-border-radius: 5px;")
+                pvtl_images[i].setAttribute("style", "padding-left:4px;padding-right:4px;padding-top:1px;padding-bottom:0px;font-weight:bold;color:white;background-color:SlateGray;font-size:1.2em;font-style:normal;-moz-border-radius: 5px;")
             }
         }
     }
@@ -29,21 +29,21 @@ function loadNumbers()
     //Left hand side icons
     for (var i = 0; i < pvtl_images2.length; i++)
     {
-        if (pvtl_images2[i].getAttribute("alt") == "Unestimated")
+        if (pvtl_images2[i].getAttribute("title") == "Unestimated")
         {
             pvtl_images2[i].setAttribute("src", "")
-            pvtl_images2[i].setAttribute("alt", "?")
+            pvtl_images2[i].setAttribute("title", "?")
             pvtl_images2[i].setAttribute("style", "font-weight:bold")
         }
         for (var n = 0; n < 9; n++)
         {
-            if (pvtl_images2[i].hasAttribute("alt"))
+            if (pvtl_images2[i].hasAttribute("title"))
             {
-                if (pvtl_images2[i].getAttribute("alt").slice(0, 17) == "Estimate: " + n + " point")
+                if (pvtl_images2[i].getAttribute("title").slice(0, 17) == "Estimate: " + n + " point")
                 {
                     pvtl_images2[i].setAttribute("src", "")
                     pvtl_images2[i].setAttribute("alt", n)
-                    pvtl_images2[i].setAttribute("style", "font-weight:bold;color:red;font-size:1.2em")
+                    pvtl_images2[i].setAttribute("style", "font-weight:bold;color:SlateGray;font-size:1.2em")
                 }
             }
         }
